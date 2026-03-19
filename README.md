@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="public/off3dstudio-logo.jpeg" alt="Off3D Studio Logo" width="200px">
+</div>
+
 # Off3D Management UI 🚀
 
 ![Angular](https://img.shields.io/badge/Angular-17+-red?style=for-the-badge&logo=angular)
