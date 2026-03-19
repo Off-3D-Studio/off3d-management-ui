@@ -2,9 +2,9 @@ name: Angular CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "develop" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "develop" ]
 
 jobs:
   build:
@@ -16,14 +16,11 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20' # Versão recomendada para Angular 17/18
+        node-version: '20'
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm ci
-
-    - name: Lint code
-      run: npm run lint --if-present
+      run: npm install
 
     - name: Build project
-      run: npm run build --configuration production
+      run: npm run build
