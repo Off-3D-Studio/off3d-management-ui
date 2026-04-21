@@ -1,0 +1,26 @@
+<section class="form-container">
+  <h3>Gestão de Clientes</h3>
+  
+  <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+    <div class="field">
+      <label>Nome Completo</label>
+      <input type="text" formControlName="name" placeholder="Ex: Amanda Paiva">
+    </div>
+
+    <div class="field">
+      <label>E-mail Corporativo</label>
+      <input type="email" formControlName="email" placeholder="contato@empresa.com">
+    </div>
+
+    <div class="field">
+      <label>Telefone / WhatsApp</label>
+      <input type="text" formControlName="phone" placeholder="(11) 99999-9999">
+    </div>
+
+    <div class="actions">
+      <button type="submit" [disabled]="customerForm.invalid">
+        Salvar Cliente
+      </button>
+    </div>
+  </form>
+</section>
