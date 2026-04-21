@@ -19,7 +19,7 @@ Este projeto é a interface oficial que consome a [Off3D Management API](https:/
 A interface foi desenhada para transformar dados complexos de engenharia e vendas em uma experiência fluida e intuitiva, focada em:
 * **Dashboard de Vendas (Sales):** Gestão de pedidos e CRM de clientes.
 * **Controle de Produção (Manufacturing):** Monitoramento de fila de impressão e status de hardware (FDM/SLA).
-* **Segurança de Dados:** Integração completa com autenticação via **JWT**.
+* **Segurança de Dados:** TESTETESTETESTE completa com autenticação via **JWT**.
 
 ## 🛠️ Stack Tecnológica
 * **Core:** Angular 17+ (uso de Signals e Standalone Components).
@@ -81,6 +81,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 |                                      Foto                                       | Colaborador           | Função             | GitHub                                         |
 |:-------------------------------------------------------------------------------:|:----------------------|:-------------------|:-----------------------------------------------|
 | <img src="https://avatars.githubusercontent.com/u/106124434?v=4" width="50px;"> | **Amanda Paiva Lino** | Tech Lead / Architect  | [@Amandapvln](https://github.com/Amandapvln)   |
+
+| <img src="https://avatars.githubusercontent.com/u/106124434?v=4" width="50px;"> | **Ian Marco Demeo** | Dev | [@ianmarco](https://github.com/ianmarco)   |
+
 
 ---
 *Este projeto é parte integrante das soluções Off3D Studio.*
