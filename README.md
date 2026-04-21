@@ -82,7 +82,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 |:-------------------------------------------------------------------------------:|:----------------------|:-------------------|:-----------------------------------------------|
 | <img src="https://avatars.githubusercontent.com/u/106124434?v=4" width="50px;"> | **Amanda Paiva Lino** | Tech Lead / Architect  | [@Amandapvln](https://github.com/Amandapvln)   |
 
-| <img src="https://avatars.githubusercontent.com/u/106124434?v=4" width="50px;"> | **Ian Marco Demeo** | Dev | [@ianmarco](https://github.com/ianmarco)   |
+| <img src="https://avatars.githubusercontent.com/u/106124434?v=4" width="50px;" alt="Ian Marco Demeo GitHub profile photo"> | **Ian Marco Demeo** | Dev | [@ianmarco](https://github.com/ianmarco)   |
 
 
 ---
