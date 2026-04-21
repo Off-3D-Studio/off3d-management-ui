@@ -1,0 +1,13 @@
+<div class="register-container">
+  <h2>Novo Operador Off-3D</h2>
+  
+  <div class="form-group">
+    <input type="text" name="nome" [(ngModel)]="userData.nome" placeholder="Nome Completo">
+    <input type="email" name="email" [(ngModel)]="userData.email" placeholder="E-mail">
+    <input type="password" name="password" [(ngModel)]="userData.password" placeholder="Sua Senha">
+    <input type="password" name="confirm" [(ngModel)]="userData.confirmPassword" placeholder="Confirme a Senha">
+  </div>
+
+  <button class="btn-primary" (click)="onRegister()">Finalizar Cadastro</button>
+  <a routerLink="/auth" class="back-link">Voltar para o Login</a>
+</div>

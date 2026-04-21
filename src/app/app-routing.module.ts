@@ -5,8 +5,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
   { 
     path: 'auth', 
-    loadChildren: () => import('./features/auth/auth.module').then(m => m.AuthModule) 
-  },
+loadChildren: () => import('./features/auth/auth-routing.module').then(m => m.AuthRoutingModule)  },
   { 
     path: 'sales', 
     loadChildren: () => import('./features/sales/sales.module').then(m => m.SalesModule) 

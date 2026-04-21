@@ -1,0 +1,268 @@
+// 1. Definição de Variáveis (Cores do Desenho)
+$off3d-yellow: #ffc107;
+$off3d-dark-yellow: #b38f00;
+$off3d-black: #1a1a1a;
+$off3d-white: #ffffff;
+
+// 2. Container Principal
+.page-container {
+    background-color: $off3d-yellow;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// 3. Header & Logo
+.main-header {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: 120px;
+            height: auto;
+        }
+
+        .logo-text {
+            h1 {
+                margin: 0;
+                font-size: 3rem;
+                color: #000;
+                letter-spacing: -1px;
+                font-weight: 700;
+            }
+
+            p {
+                margin: 0;
+                font-family: 'Permanent Marker', cursive;
+                color: $off3d-white;
+                font-size: 1.4rem;
+                text-shadow: 2px 2px 0px #000;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+// 4. Navbar
+.navbar {
+    background-color: #000;
+    padding: 10px 0;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        margin: 0;
+        padding: 0 60px;
+        list-style: none;
+
+        li a {
+            color: $off3d-white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 400;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $off3d-yellow;
+            }
+        }
+    }
+}
+
+// 5. Área Central (Hero Section)
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px 10%;
+    flex-grow: 1;
+
+    .welcome-text {
+        max-width: 450px;
+
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    }
+
+    // Wrapper que agrupa o Card + Botões
+    .login-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; // ALTERADO: Agora centraliza os botões em relação ao card
+        gap: 20px;
+    }
+
+    // Card de Login
+    .login-card {
+        background-color: $off3d-dark-yellow;
+        padding: 40px;
+        border-radius: 25px;
+        width: 400px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+
+            label {
+                display: block;
+                font-weight: 700;
+                margin-bottom: 8px;
+                font-size: 1.1rem;
+            }
+
+            input {
+                width: 100%;
+                padding: 12px;
+                padding-right: 45px;
+                border: none;
+                border-radius: 10px;
+                background-color: #f0f0f0;
+                font-size: 1rem;
+                box-sizing: border-box;
+            }
+
+            .password-wrapper {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .eye-icon-container {
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    width: 24px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            small {
+                display: block;
+                margin-top: 8px;
+                font-style: italic;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// 6. Botões de Ação (Abaixo do Card)
+.action-buttons {
+    display: flex;
+    justify-content: center; // ALTERADO: Centraliza os botões entre si
+    gap: 20px;
+    width: 100%;
+
+    button {
+        padding: 15px 40px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: $off3d-black;
+        color: $off3d-yellow;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.05);
+            background-color: #333;
+        }
+    }
+}
+
+// 7. Missão
+.mission-section {
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: $off3d-yellow;
+
+    .mission-content {
+        max-width: 800px;
+        
+        h4 {
+            font-weight: 800;
+            text-transform: none;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+            color: $off3d-black;
+        }
+
+        p {
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-size: 1rem;
+            color: $off3d-black;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// 8. Rodapé
+.footer {
+  text-align: center;
+  padding: 40px 20px; 
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background-image: url('/img/linha-textura.png');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.7;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
